@@ -16,7 +16,7 @@ install: up build
 		$(filter-out $@,$(MAKECMDGOALS))
 	ddev exec php craft plugin/install cp-field-inspect
 	ddev exec php craft plugin/install vite
-	ddev exec php craft plugin/install link-field
+	ddev exec php craft plugin/install typedlinkfield
 	ddev exec php craft plugin/install ckeditor
 up:
 	if [ ! "$$(ddev describe | grep OK)" ]; then \
