@@ -5,7 +5,7 @@ build: up
 dev: build
 	ddev exec npm run serve
 pull: up
-	ddev exec php craft servd-asset-storage/local/pull-database --from=production --interactive=0
+	# ddev exec php craft servd-asset-storage/local/pull-database --from=production --interactive=0
 	ddev composer install
 install: up build
 	ddev exec php craft setup/app-id \
