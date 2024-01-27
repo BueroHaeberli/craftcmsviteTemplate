@@ -3,8 +3,9 @@
 A Craft CMS starter project using DDEV for local hosting and Vite for front-end bundling and HMR.
 
 > https://user-images.githubusercontent.com/134110/132591782-0bcc9465-eb62-46e0-9337-6154bf45fe97.mp4
-> 
-> ☝️ A 1-min video demo, going from zero to Vite HMR on a fresh Craft install, with only 3 CLI commands:  
+>
+> ☝️ A 1-min video demo, going from zero to Vite HMR on a fresh Craft install, with only 3 CLI commands:
+>
 > 1. `composer create-project...`
 > 2. `make install`
 > 3. `make dev`
@@ -27,25 +28,12 @@ A Craft CMS starter project using DDEV for local hosting and Vite for front-end 
 
 ## Getting Started
 
-### Option 1: With Composer (recommended)
+### Git CLI
 
-If you have [Composer](https://getcomposer.org/) installed on your local machine,
-you can use `create-project` to pull the latest tagged release.
-
-Open terminal prompt, and run:
+Clone the repo via the Git CLI:
 
 ```shell
-composer create-project onedarnleyroad/craftcms PATH --no-install
-```
-
-Make sure that `PATH` is a **new** or **existing and empty** folder.
-
-### Option 2: With Git CLI
-
-Alternatively you can clone the repo via the Git CLI:
-
-```shell
-git clone git@github.com:onedarnleyroad/craftcms.git PATH
+git clone git@github.com:BueroHaeberli/craftcmsviteTemplate.git PATH
 ```
 
 Make sure that `PATH` is a **new** _or_ **existing and empty** folder.
@@ -66,21 +54,7 @@ mv -f .gitignore.default .gitignore
 rm CHANGELOG.md && rm LICENSE.md && rm README.md
 ```
 
-### Option 3: Manual Download
-
-Download a copy of the repo to your local machine and move to where you want to your project to run. Similar to above, you'll then want to clean up and set some default files for use. In the terminal, run:
-
-```shell
-cd PATH
-cp .env.example .env
-mv -f composer.json.default composer.json
-mv -f .gitignore.default .gitignore
-rm CHANGELOG.md && rm LICENSE.md && rm README.md
-```
-
 ## Configuring DDEV
-
-_Note: This section is optional. If you are simply test-driving this project, feel free to skip to the next section. ⚡_
 
 To configure your project to operate on a domain other than `https://craftcms.ddev.site`, run:
 
@@ -151,14 +125,9 @@ A Makefile has been included to provide a unified CLI for common development com
 
 1. [CP Field Inspect](https://plugins.craftcms.com/cp-field-inspect)
 1. [Craft Autocomplete](https://github.com/nystudio107/craft-autocomplete)
-1. [Hyper](https://plugins.craftcms.com/hyper)
-1. [Imager-X](https://imager-x.spacecat.ninja/)
-1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
-1. [Postmark](https://plugins.craftcms.com/postmark)
-1. [Redactor](https://plugins.craftcms.com/redactor)
-1. [Seomatic](https://nystudio107.com/docs/seomatic/)
-1. [Servd Assets and Helpers](https://github.com/servdhost/craft-asset-storage)
 1. [Vite](https://github.com/nystudio107/craft-vite)
+1. [CK editor](https://github.com/craftcms/ckeditor)
+1. [Link Field](https://github.com/sebastian-lenz/craft-linkfield)
 
 ## Tailwind Plugins
 
@@ -178,4 +147,4 @@ A Makefile has been included to provide a unified CLI for common development com
 
 ## Acknowledgements & Credits
 
-Aside from the obvious gratitude owed to the entire team at [Pixel & Tonic](https://pixelandtonic.com/) for their tireless work on Craft, a special thanks goes out to Andrew Welch of [nystudio107](https://nystudio107.com/). Not only has he developed some of the most widely used plugins in the Craft ecosystem, he has dedicated countless time and energy to pushing all of us in the community to excel at everything we do. He has an uncanny ability to see through the fog of development war to know what's best - not just for us, but for our future selves, our clients, and the users of the sites we build. His contributions have made all of our sites perform better in SEO, run faster in the browser, and made our development workflow more streamlined and efficient. Hats off to you, sir. 
+Aside from the obvious gratitude owed to the entire team at [Pixel & Tonic](https://pixelandtonic.com/) for their tireless work on Craft, a special thanks goes out to Andrew Welch of [nystudio107](https://nystudio107.com/). Not only has he developed some of the most widely used plugins in the Craft ecosystem, he has dedicated countless time and energy to pushing all of us in the community to excel at everything we do. He has an uncanny ability to see through the fog of development war to know what's best - not just for us, but for our future selves, our clients, and the users of the sites we build. His contributions have made all of our sites perform better in SEO, run faster in the browser, and made our development workflow more streamlined and efficient. Hats off to you, sir.
